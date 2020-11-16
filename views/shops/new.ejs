@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Third Wave</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/shops">All Shops</a>
+    </nav>
+    <h1>Add a Wave!</h1>
+        <p>How much of a coffee snob are you? Add your shop but be prepared, others will leave reviews!</p>
+    
+    <form action="/shops" method="POST">
+    <label for="name">Coffee Shop:</label>
+    <input type="text" name="name" id="name"><br>
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city"><br>
+    <label for="hours">Hours:</label>
+    <input type="text" name="hours" id="hours"><br>
+    <label for="wifi">Wifi:</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="wifi" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="wifi" id="no" value="false"><br>
+    <label for="sizes">Sizing:</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="sizes" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="sizes" id="no" value="false"><br>
+    <label for="seating">Seating:</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="seating" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="seating" id="no" value="false"><br>
+    <label for="milkType">Non-Dairy Milks:</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="milkType" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="milkType" id="no" value="false"><br>
+    <label for="roastSource">OG Bean:</label>
+        <label for="yes">Yes</label>
+        <input type="radio" name="roastSource" id="yes" value="true">
+        <label for="no">No</label>
+        <input type="radio" name="roastSource" id="no" value="false"><br>
+    <input type="submit" value="Add!">
+    </form>
+    
+    <footer>Copyright &copy;Third Wave 2020</footer>
+</body>
+
+</html>

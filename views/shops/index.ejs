@@ -10,12 +10,21 @@
 
 <body>
     <nav>
-        <a href="/shops">All Shops</a>
+        <a href="/">Home</a>
         <a href="/shops/new">Add a Wave</a>
     </nav>
-    <h1>Third Wave</h1>
-    <h3>Coffee Shops</h3>
-    <p>We are here to make sure you never get fooled by a font ever again!</p>
+    <h1>Waves you can ride:</h1>
+    <ul>
+        <% shops.forEach(function(shop) { %>
+        <li>
+            <strong id="name"> <%= shop.name %></strong>
+             <br>
+             <%= shop.city %>
+             <br>
+            <a id="details" href="/shops/<%= shop._id %>">DETAILS</a>
+        </li>
+    <% }); %>
+    </ul>
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>
 
