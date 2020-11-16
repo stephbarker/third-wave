@@ -10,7 +10,8 @@ const shopsCtrl = require('../controllers/shops');
 //GET '/' -. give me the homepage
 router.get('/', shopsCtrl.index);
 router.get('/new', shopsCtrl.new);
-router.post('/', shopsCtrl.create)
+router.post('/', shopsCtrl.create);
+router.get('/:id', shopsCtrl.show)
 
 // export our router object
 module.exports = router;

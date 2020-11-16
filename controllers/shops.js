@@ -5,7 +5,8 @@ const Shop = require('../models/shop');
 module.exports = {
     index,
     new: newShop,
-    create
+    create,
+    show
 };
 
 //define the action (functions)
@@ -26,5 +27,11 @@ function create(req,res) {
         if(err) return res.redirect('/shops/new');
         console.log(shop);
         res.redirect('/shops');
+    });
+}
+
+function show(req,res) {
+    Shop.findById(req.params.id, function(err,shop) {
+        res.render('shops/show', {shop});
     });
 }

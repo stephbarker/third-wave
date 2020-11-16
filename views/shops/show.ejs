@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Third Wave</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/shops">All Shops</a>
+    </nav>
+    <section id="show-page">
+        <div><%= shop.name %></div>
+        <div><%= shop.city %></div>
+        <div>Wifi: </div>
+        <div><%= shop.wifi ? 'Yes' : 'Nope' %></div>
+        <div>Sizing: </div>
+        <div><%= shop.sizes ? 'Yes' : 'Nope' %></div>
+        <div>Seating: </div>
+        <div><%= shop.seating ? 'Yes' : 'Nope' %></div>
+        <div>Non-Dairy Milks: </div>
+        <div><%= shop.milkType ? 'Yes' : 'Nope' %></div>
+        <div>OG Bean: </div>
+        <div><%= shop.roastSource ? 'Yes' : 'Nope' %></div>
+      </section>
+    <footer>Copyright &copy;Third Wave 2020</footer>
+</body>
+
+</html>
