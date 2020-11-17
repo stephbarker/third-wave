@@ -4,33 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Third Wave</title>
 </head>
 
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/shops">All Shops</a>
+        <a class="nav" href="/">Home</a>
+        <a class="nav" href="/shops">All Shops</a>
     </nav>
     <section id="show-page">
-        <div><%= shop.name %></div>
-        <div><%= shop.city %></div>
-        <div>Wifi: </div>
-        <div><%= shop.wifi ? 'Yes' : 'Nope' %></div>
-        <div>Sizing: </div>
-        <div><%= shop.sizes ? 'Yes' : 'Nope' %></div>
-        <div>Seating: </div>
-        <div><%= shop.seating ? 'Yes' : 'Nope' %></div>
-        <div>Non-Dairy Milks: </div>
-        <div><%= shop.milkType ? 'Yes' : 'Nope' %></div>
-        <div>OG Bean: </div>
-        <div><%= shop.roastSource ? 'Yes' : 'Nope' %></div>
-        <a href="/shops/<%= shop._id %>/edit">Edit</a>
+        <div  class="show" id="name"><%= shop.name %></div>
+        <div class="show" ><%= shop.city %></div>
+        <div class="show" >Wifi: <span><%= shop.wifi ? 'Yes' : 'Nope' %></span></div>
+        <div class="show" >Sizing: <span><%= shop.sizes ? 'Yes' : 'Nope' %></span></div>
+        <div class="show" >Seating: <span><%= shop.seating ? 'Yes' : 'Nope' %></span></div>
+        <div class="show" >Non-Dairy Milks: <span><%= shop.milkType ? 'Yes' : 'Nope' %></span></div>
+        <div class="show" >OG Bean: <span><%= shop.roastSource ? 'Yes' : 'Nope' %></span> </div>
+        <button id="edit-btn"><a id="edit" href="/shops/<%= shop._id %>/edit">Edit</a></button>
     <form action="/shops/<%= shop._id %>?_method=DELETE" class='delete-form' method="POST">
-            <button type="submit">Delete Shop</button>
+            <button id="delete" type="submit">Delete</button>
     </form>
-    
+
       </section>
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>

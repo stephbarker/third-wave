@@ -4,27 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Third Wave</title>
 </head>
 
 <body>
     <nav>
-        <a href="/">Home</a>
-        <a href="/shops/new">Add a Wave</a>
+        <a class="nav" href="/">Home</a>
+        <a class="nav" href="/shops/new">Add a Wave</a>
     </nav>
-    <h1>Waves you can ride:</h1>
-    <ul>
-        <% shops.forEach(function(shop) { %>
-        <li>
-            <strong id="name"> <%= shop.name %></strong>
-             <br>
-             <%= shop.city %>
-             <br>
-            <a id="details" href="/shops/<%= shop._id %>">DETAILS</a>
-        </li>
-    <% }); %>
-    </ul>
+    <main class="list-page">
+        <h1 id="ride">Waves you can ride:</h1>
+        <ul class="shops">
+            <% shops.forEach(function(shop) { %>
+            <li class="list">
+                <strong id="name"> <%= shop.name %></strong>
+                <p id="city"><%= shop.city %></p>
+                <br>
+                <a id="details" href="/shops/<%= shop._id %>">DETAILS</a>
+                <hr>
+            </li>
+            <% }); %>
+           
+        </ul>
+    </main>
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>
 

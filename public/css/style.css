@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+:root {
+    --primary-brand-color: cornflowerblue;
+    --shadow-color: chocolate;
+    --background-color:gold;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Nav */
+nav {
+    background: var(--primary-brand-color);
+    width: 100%;
+    height: 60px;
+    padding: 14px;
+    margin: 10px;
+    font-size: 25px;
+}
+
+.nav {
+    color: white;
+    text-decoration: none;
+    text-shadow: .5px .5px var(--shadow-color);
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.nav:hover {
+    color: var(--background-color);
+}
+
+
+/* HomePage */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    font-family: Helvetica;
+    
+}
+
+main {
+    flex-grow: 1;
+    text-align: center;
+    background: var(--background-color);
+    width: 100%;
+}
+
+#logo {
+    font-family: "Modak", Helvetica;
+    margin-top: 15%;
+    margin-bottom: 0px;
+    font-size: 150px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: var(--primary-brand-color);
+    text-shadow: 4px 4px var(--shadow-color);
+}
+
+h3 {
+    font-size: 35px;
+    margin-top: 0px;
+    line-height: 0px;
+    color: var(--shadow-color);
+    text-shadow: 1px 1px white;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 0px;
+    color: var(--shadow-color);
+    text-shadow: .5px .5px white;
+    
+}
+
+/* List Page */
+.list-page {
+    background: linear-gradient(to bottom right,var(--background-color), white);
+}
+
+#ride {
+    font-family: "Modak", Helvetica;
+    font-size: 100px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: var(--shadow-color);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    margin-left: 30px;
+}
+
+li #name {
+    color: var(--primary-brand-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+#city {
+    color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px var(--primary-brand-color);
+    padding: 10px;
+
+}
+
+.shops {
+    text-align: left;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--shadow-color);
+    text-shadow: .5px .5px white;
+    margin: 10px;
+}
+
+
+#details {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    text-shadow: .5px .5px var(--shadow-color);
+    border: 2px solid white;
+    padding: 10px;
+    line-height: 10px;
+    background: var(--shadow-color);
+}
+
+#details:hover {
+    color: var(--background-color);
+}
+
+/* Show Page */
+ #show-page {
+    background: linear-gradient(to top right,var(--background-color), white);
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+ }
+
+ #name {
+     text-align: center;
+     font-size: 100px;
+     font-family: "Modak", Helvetica;
+     font-weight: lighter;
+     text-decoration: underline;
+     text-shadow: 3px 3px white;
+     color: var(--shadow-color);
+ }
+
+ div.show {
+     font-size: 50px;
+     color: var(--primary-brand-color);
+     text-shadow: .5px .5px white;
+     text-align: left;
+     margin: 10px;
+     margin-left: 25px;
+ }
+
+ span {
+    font-size: 40px;
+    color: white;
+    text-shadow: .5px .5px var(--shadow-color);
+ }
+
+ #edit {
+     text-decoration: none;
+     color: white;
+     text-shadow: .5px .5px var(--shadow-color);
+ }
+
+ #edit-btn {
+     float: left;
+     height: 70px;
+     width: 150px;
+     margin-left: 100px;
+     margin-top: 25px;
+     font-size: 35px;
+     text-decoration: none;
+     border: 2px solid white;
+     background: var(--primary-brand-color);
+     box-shadow: 1px 1px 12px 1px var(--shadow-color);
+ }
+
+ #delete {
+     float: right;
+     height: 70px;
+     width: 150px;
+     margin-right: 100px;
+     margin-top: 25px;
+     font-size: 35px;
+     color: white;
+     text-decoration: none;
+     text-shadow: .5px .5px var(--shadow-color);
+     border: 2px solid white;
+     background: var(--primary-brand-color);
+     box-shadow: 1px 1px 12px 1px var(--shadow-color);
+ }
+
+#delete:hover {
+    color: var(--background-color);
+ }
+
+ #edit:hover {
+    color: var(--background-color);
+ }
+
+
+/*Footer*/
+footer {
+    background: var(--primary-brand-color);
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+}
