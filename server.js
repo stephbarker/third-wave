@@ -1,6 +1,7 @@
 // Require our modules
 const express = require('express');
 const morgan = require('morgan');
+const methodOverride = require('method-override');
 const port = process.env.PORT || 3000;
 
 // set up the express app
@@ -21,7 +22,7 @@ const shopsRouter = require('./routes/shops')
 app.use(morgan('dev'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false}));
-
+app.use(methodOverride('_method'));
 
 // TODO: mount our routes with .use()
 app.use('/', indexRouter);

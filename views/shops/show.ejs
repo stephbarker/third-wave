@@ -26,6 +26,11 @@
         <div><%= shop.milkType ? 'Yes' : 'Nope' %></div>
         <div>OG Bean: </div>
         <div><%= shop.roastSource ? 'Yes' : 'Nope' %></div>
+        <a href="/shops/<%= shop._id %>/edit">Edit</a>
+    <form action="/shops/<%= shop._id %>?_method=DELETE" class='delete-form' method="POST">
+            <button type="submit">Delete Shop</button>
+    </form>
+    
       </section>
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>

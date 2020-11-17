@@ -13,10 +13,9 @@
         <a href="/">Home</a>
         <a href="/shops">All Shops</a>
     </nav>
-    <h1>Add a Wave!</h1>
-        <p>How much of a coffee snob are you? Add your shop but be prepared, others will leave reviews!</p>
+    <h1>Hold up, gatta fix that!</h1>
     
-    <form action="/shops" method="POST" autocomplete="off">
+    <form action="/shops/<%= shop._id %>?_method=PUT" method="POST" autocomplete="off">
     <label for="name">Coffee Shop:</label>
     <input type="text" name="name" id="name"><br>
     <label for="city">City:</label>
@@ -48,7 +47,7 @@
         <input type="radio" name="roastSource" id="yes" value="true">
         <label for="no">No</label>
         <input type="radio" name="roastSource" id="no" value="false"><br>
-    <input type="submit" value="Add!">
+    <input type="submit" value="Save!">
     </form>
     
     <footer>Copyright &copy;Third Wave 2020</footer>

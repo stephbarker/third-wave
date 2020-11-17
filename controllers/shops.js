@@ -6,7 +6,10 @@ module.exports = {
     index,
     new: newShop,
     create,
-    show
+    show,
+    update,
+    edit,
+    delete: deleteShop
 };
 
 //define the action (functions)
@@ -34,4 +37,23 @@ function show(req,res) {
     Shop.findById(req.params.id, function(err,shop) {
         res.render('shops/show', {shop});
     });
+}
+
+function update(req,res) {
+        Shop.findByIdAndUpdate(req.params.id, req.body, function(err,shop) {
+            res.redirect('/shops'); 
+        });      
+}
+
+function edit(req,res) {
+    Shop.findById(req.params.id, function(err,shop) {
+        res.render('shops/edit', {shop});
+    });
+}
+
+function deleteShop(req,res) {
+    Shop.findByIdAndDelete(req.params.id, function(err,shop){
+        res.redirect('/shops');
+    }); 
+  
 }
