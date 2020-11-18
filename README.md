@@ -15,7 +15,7 @@
 - EJS
 
 # Wireframe
-![homepage](./imgs/homepage.png)
+![homepage](./imgs/home-page.png)
 ![listpage](./imgs/list-page.png)
 ![newpage](./imgs/new-page.png)
 ![showpage](./imgs/show-page.png)
