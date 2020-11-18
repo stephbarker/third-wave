@@ -14,7 +14,17 @@
 - Mongoose
 - EJS
 
+# Wireframe
+![homepage](./imgs/homepage.png)
+![listpage](./imgs/list-page.png)
+![newpage](./imgs/new-page.png)
+![showpage](./imgs/show-page.png)
+
 # Screenshots
+![homepage](./imgs/main-page.png)
+![listpage](./imgs/shop-page.png)
+![newpage](./imgs/add-page.png)
+![showpage](./imgs/detail-page.png)
 
 # Getting Started
 [Click Here](#) to see the deployed app!
