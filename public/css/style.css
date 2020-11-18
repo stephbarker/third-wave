@@ -250,11 +250,12 @@ ul {
       line-height: 75px;
   }
 
-  .radio {
-    height: 2em;
-    width: 25%;
-    margin: -140px; 
-  }
+  /*.radio {
+     border: 0px;
+     height: 2em;
+     width: 25%;
+     margin: -140px; 
+  }*/ 
 
   #add-btn, #save-btn {
      float: right;

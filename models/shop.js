@@ -32,9 +32,6 @@ const shopSchema = new Schema({
         type: Boolean,
         default: false
     },
-    hours: {
-        type: Number
-    }
 }, 
 {timestamps: true});
 
