@@ -13,44 +13,45 @@
         <a class="nav" href="/">Home</a>
         <a class="nav" href="/shops">All Shops</a>
     </nav>
-    <h1>Add a Wave!</h1>
-        <p>How much of a coffee snob are you? Add your shop but be prepared, others will leave reviews!</p>
+    <main id="new-page">
+    <h1 id="new-wave">Add a Wave!</h1>
+        <p id="new">How much of a coffee snob are you? Add your shop but be prepared, others will leave reviews!</p>
     
     <form action="/shops" method="POST" autocomplete="off">
     <label for="name">Coffee Shop:</label>
-    <input type="text" name="name" id="name"><br>
+    <input id="label-boxes" type="text" name="name" id="name"><br>
     <label for="city">City:</label>
-    <input type="text" name="city" id="city"><br>
+    <input id="label-boxes" type="text" name="city" id="city"><br>
     <label for="hours">Hours:</label>
-    <input type="text" name="hours" id="hours"><br>
+    <input id="label-boxes" type="text" name="hours" id="hours"><br>
     <label for="wifi">Wifi:</label>
-        <label for="yes">Yes</label>
-        <input type="radio" name="wifi" id="yes" value="true">
-        <label for="no">No</label>
-        <input type="radio" name="wifi" id="no" value="false"><br>
+        <label class="yes" for="yes">Yes</label>
+        <input class="radio" type="radio" name="wifi" id="yes" value="true">
+        <label class="yes" for="no">No</label>
+        <input class="radio" type="radio" name="wifi" id="no" value="false"><br>
     <label for="sizes">Sizing:</label>
-        <label for="yes">Yes</label>
-        <input type="radio" name="sizes" id="yes" value="true">
-        <label for="no">No</label>
-        <input type="radio" name="sizes" id="no" value="false"><br>
+        <label class="yes" for="yes">Yes</label>
+        <input class="radio" type="radio" name="sizes" id="yes" value="true">
+        <label class="yes" for="no">No</label>
+        <input class="radio" type="radio" name="sizes" id="no" value="false"><br>
     <label for="seating">Seating:</label>
-        <label for="yes">Yes</label>
-        <input type="radio" name="seating" id="yes" value="true">
-        <label for="no">No</label>
-        <input type="radio" name="seating" id="no" value="false"><br>
+        <label class="yes" for="yes">Yes</label>
+        <input class="radio" type="radio" name="seating" id="yes" value="true">
+        <label class="yes" for="no">No</label>
+        <input class="radio" type="radio" name="seating" id="no" value="false"><br>
     <label for="milkType">Non-Dairy Milks:</label>
-        <label for="yes">Yes</label>
-        <input type="radio" name="milkType" id="yes" value="true">
-        <label for="no">No</label>
-        <input type="radio" name="milkType" id="no" value="false"><br>
+        <label class="yes" for="yes">Yes</label>
+        <input class="radio" type="radio" name="milkType" id="yes" value="true">
+        <label class="yes" for="no">No</label>
+        <input class="radio" type="radio" name="milkType" id="no" value="false"><br>
     <label for="roastSource">OG Bean:</label>
-        <label for="yes">Yes</label>
-        <input type="radio" name="roastSource" id="yes" value="true">
-        <label for="no">No</label>
-        <input type="radio" name="roastSource" id="no" value="false"><br>
-    <input type="submit" value="Add!">
+        <label class="yes" for="yes">Yes</label>
+        <input class="radio" type="radio" name="roastSource" id="yes" value="true">
+        <label class="yes" for="no">No</label>
+        <input class="radio" type="radio" name="roastSource" id="no" value="false"><br>
+    <input id="add-btn" type="submit" value="Add!">
     </form>
-    
+</main>
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>
 

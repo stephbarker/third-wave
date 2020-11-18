@@ -177,28 +177,27 @@ ul {
      float: left;
      height: 70px;
      width: 150px;
-     margin-left: 100px;
+     margin-left: 350px;
      margin-top: 25px;
      font-size: 35px;
      text-decoration: none;
      border: 2px solid white;
      background: var(--primary-brand-color);
-     box-shadow: 1px 1px 12px 1px var(--shadow-color);
  }
 
  #delete {
      float: right;
      height: 70px;
      width: 150px;
-     margin-right: 100px;
+     margin-right: 350px;
      margin-top: 25px;
+     margin-bottom: 25px;
      font-size: 35px;
      color: white;
      text-decoration: none;
      text-shadow: .5px .5px var(--shadow-color);
      border: 2px solid white;
-     background: var(--primary-brand-color);
-     box-shadow: 1px 1px 12px 1px var(--shadow-color);
+     background: var(--shadow-color);
  }
 
 #delete:hover {
@@ -209,6 +208,92 @@ ul {
     color: var(--background-color);
  }
 
+ /* New Page */
+  #new-wave, #edit-wave {
+    font-family: "Modak", Helvetica;
+    font-size: 100px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: var(--shadow-color);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  #new {
+    font-size: 28px;
+    color: var(--primary-brand-color);
+    text-shadow: .5px .5px white;
+  }
+
+  form {
+      text-align: left;
+      margin-left: 30px;
+      font-size: 35px;
+      color: var(--shadow-color);
+      text-shadow: 1px 1px white;
+  }
+
+  .yes {
+    color: var(--primary-brand-color);
+    text-shadow: .5px .5px white;
+  }
+
+  #label-boxes {
+      height: 30px;
+      width: 35%;
+      font-size: 50%;
+  }
+
+  label {
+      margin: 10px;
+      line-height: 75px;
+  }
+
+  .radio {
+    height: 2em;
+    width: 25%;
+    margin: -140px; 
+  }
+
+  #add-btn, #save-btn {
+     float: right;
+     height: 70px;
+     width: 150px;
+     margin-right: 550px;
+     margin-top: 25px;
+     margin-bottom: 35px;
+     font-size: 35px;
+     color: white;
+     text-decoration: none;
+     text-shadow: .5px .5px var(--shadow-color);
+     border: 2px solid white;
+     background: var(--primary-brand-color);
+  }
+
+  #add-btn:hover {
+        color: var(--background-color);
+  }
+
+  /* Edit Page */
+
+  #edit-form {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 35px;
+    color: var(--primary-brand-color);
+    text-shadow: 1px 1px white;
+}
+
+#save-btn:hover {
+    color: var(--background-color);
+}
+
+.no {
+    color: var(--shadow-color);
+    text-shadow: .5px .5px white;
+  }
+    
 
 /*Footer*/
 footer {
