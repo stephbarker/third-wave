@@ -300,6 +300,18 @@ ul {
     margin-top: -30px;
  }
 
+ h5 {
+    font-family: "Modak", Helvetica;
+    font-size: 75px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: var(--shadow-color);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    background: var(--background-color);
+    width: 100%;
+ }
+
  /* New Page */
   #new-wave, #edit-wave {
     font-family: "Modak", Helvetica;

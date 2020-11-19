@@ -2,12 +2,14 @@
 
 // require the mongoose module
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // set up a shortcut variable (db)
 const db = mongoose.connection;
+const MONGODB_URI = process.env.MONGODB_URI;
 
 // connect to mongoDB
-mongoose.connect('mongodb+srv://admin:abceasyas123@cluster0.quwlv.mongodb.net/third-wave?retryWrites=true&w=majority', {
+mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
