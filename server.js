@@ -16,7 +16,8 @@ app.set('view engine', 'ejs');
 
 // require the router modules
 const indexRouter = require('./routes/index');
-const shopsRouter = require('./routes/shops')
+const shopsRouter = require('./routes/shops');
+const reviewsRouter = require('./routes/reviews');
 
 // mount our middleware with .use()
 app.use(morgan('dev'));
@@ -27,6 +28,7 @@ app.use(methodOverride('_method'));
 // TODO: mount our routes with .use()
 app.use('/', indexRouter);
 app.use('/shops', shopsRouter);
+app.use('/', reviewsRouter);
 
 
 // tell the app to listen

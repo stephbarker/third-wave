@@ -14,19 +14,58 @@
         <a class="nav" href="/shops">All Shops</a>
     </nav>
     <section id="show-page">
-        <div  class="show" id="name"><%= shop.name %></div>
-        <div class="show" ><%= shop.city %></div>
-        <div class="show" >Wifi: <span><%= shop.wifi ? 'Yes' : 'Nope' %></span></div>
-        <div class="show" >Sizing: <span><%= shop.sizes ? 'Yes' : 'Nope' %></span></div>
-        <div class="show" >Seating: <span><%= shop.seating ? 'Yes' : 'Nope' %></span></div>
-        <div class="show" >Non-Dairy Milks: <span><%= shop.milkType ? 'Yes' : 'Nope' %></span></div>
-        <div class="show" >OG Bean: <span><%= shop.roastSource ? 'Yes' : 'Nope' %></span> </div>
+        <div class="show" id="name"><%= shop.name %></div>
+        <div class="show" id="city"><%= shop.city %></div>
+        <div class="show">Wifi: <span><%= shop.wifi ? 'Yes' : 'Nope' %></span></div>
+        <div class="show">Sizing: <span><%= shop.sizes ? 'Yes' : 'Nope' %></span></div>
+        <div class="show">Seating: <span><%= shop.seating ? 'Yes' : 'Nope' %></span></div>
+        <div class="show">Non-Dairy Milks: <span><%= shop.milkType ? 'Yes' : 'Nope' %></span></div>
+        <div class="show">OG Bean: <span><%= shop.roastSource ? 'Yes' : 'Nope' %></span> </div>
         <button id="edit-btn"><a id="edit" href="/shops/<%= shop._id %>/edit">Edit</a></button>
-    <form action="/shops/<%= shop._id %>?_method=DELETE" class='delete-form' method="POST">
+        <form action="/shops/<%= shop._id %>?_method=DELETE" class='delete-form' method="POST">
             <button id="delete" type="submit">Delete</button>
-    </form>
+        </form>
+    </section>
+        <a id="reviews"></a>
+        <h2>Reviews</h2>
+        <form id="add-review-form" method="POST" action="/movies/<%= shop._id %>/reviews">
+            <label>What are you thinking...</label>
+            <textarea name="content"></textarea>
+            <label>Rating:</label>
+            <select id="rating" name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <input id="add-review" type="submit" value="Add Review">
+        </form>
+        <% if (shop.reviews.length) { %>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Review</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% shop.reviews.forEach(function(r) { %>
+                <tr>
+                    <td><%= r.createdAt.toLocaleDateString() %></td>
+                    <td><%= r.content %></td>
+                    <td><%= r.rating %></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <% } else { %>
+        <h5>No Reviews Yet</h5>
+        <% } %>
 
-      </section>
+
+   
     <footer>Copyright &copy;Third Wave 2020</footer>
 </body>
 

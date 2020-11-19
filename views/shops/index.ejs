@@ -19,9 +19,10 @@
             <% shops.forEach(function(shop) { %>
             <li class="list">
                 <strong id="name"> <%= shop.name %></strong>
-                <p id="city"><%= shop.city %></p>
+                <p id="city-list"><%= shop.city %></p>
                 <br>
-                <a id="details" href="/shops/<%= shop._id %>">DETAILS</a>
+                <a id="details" href="/shops/<%= shop._id %>">Details</a>
+                <a id="details" href="/shops/<%= shop._id %>#reviews">Reviews</a>
                 <hr>
             </li>
             <% }); %>

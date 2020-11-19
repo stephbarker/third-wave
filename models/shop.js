@@ -5,7 +5,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
-// intitialize our flightschema
+const reviewSchema = new Schema({
+    content: String,
+    rating: {type: Number, min:1, max: 5, default: 5}
+  }, {
+    timestamps: true
+  });
+
+
 const shopSchema = new Schema({
     name: {
         type: String,
@@ -32,6 +39,7 @@ const shopSchema = new Schema({
         type: Boolean,
         default: false
     },
+    reviews: [reviewSchema]
 }, 
 {timestamps: true});
 

@@ -101,11 +101,12 @@ ul {
     list-style-type: none;
 }
 
-#city {
+#city-list {
     color: white;
-    font-size: 45px;
+    font-size: 55px;
     text-shadow: 2px 2px var(--primary-brand-color);
     padding: 10px;
+    margin-top: -30px;
 
 }
 
@@ -128,6 +129,7 @@ ul {
     padding: 10px;
     line-height: 10px;
     background: var(--shadow-color);
+    border-radius: 12px;
 }
 
 #details:hover {
@@ -150,6 +152,15 @@ ul {
      text-decoration: underline;
      text-shadow: 3px 3px white;
      color: var(--shadow-color);
+ }
+
+ #city {
+     text-align: center;
+     text-shadow: 2px 2px white;
+     margin-top: -50px;
+     color: var(--primary-brand-color);
+     font-size: 60px;
+     font-family: "Modak", Helvetica;
  }
 
  div.show {
@@ -208,6 +219,87 @@ ul {
     color: var(--background-color);
  }
 
+ /* Reviews */
+ h2 {
+    font-family: "Modak", Helvetica;
+    font-size: 75px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: var(--shadow-color);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    margin-left: 30px;
+ }
+
+ #add-review-form {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     color: var(--primary-brand-color);
+     font-size: 50px;
+  }
+
+  textarea {
+      height: 200px;
+      width: 500px;
+      border: 3px solid var(--shadow-color);
+      border-radius: 12px;
+      margin-left: 200px;
+  }
+
+  #rating {
+      height: 100px;
+      width: 100px;
+      font-size: 75%;
+      padding: 10px;
+      border: 3px solid var(--shadow-color);
+      border-radius: 12px;
+      margin-left: 200px;
+  }
+ 
+  #add-review {
+    float: right;
+    height: 70px;
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 500px;
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+    text-shadow: .5px .5px var(--shadow-color);
+    border: 2px solid white;
+    background: var(--primary-brand-color);
+    border-radius: 12px;
+  }
+
+  #add-review:hover {
+    color: var(--background-color);
+ }
+
+ table {
+     background: var(--background-color);
+     width: 100%;
+     text-align: center;
+ }
+
+ thead {
+     text-shadow: 2px 2px white;
+     color: var(--primary-brand-color);
+     font-size: 50px;
+     font-family: Helvetica;
+     text-decoration: underline;
+     padding-right: 30px;
+ }
+
+ td {
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px var(--primary-brand-color);
+    padding: 10px;
+    margin-top: -30px;
+ }
+
  /* New Page */
   #new-wave, #edit-wave {
     font-family: "Modak", Helvetica;
@@ -216,7 +308,6 @@ ul {
     text-decoration: underline;
     color: var(--shadow-color);
     text-shadow: 2px 2px white;
-    text-align: center;
     margin-bottom: 5px;
   }
 
