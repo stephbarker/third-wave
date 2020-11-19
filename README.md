@@ -30,7 +30,7 @@
 ![showpage](./imgs/detail-page.png)
 
 # Getting Started
-[Click Here](#) to see the deployed app!
+[Click Here](https://sbarker-third-wave.herokuapp.com/) to see the deployed app!
 
 # Future Enhancements
 
