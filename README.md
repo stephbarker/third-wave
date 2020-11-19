@@ -20,6 +20,9 @@
 ![newpage](./imgs/new-page.png)
 ![showpage](./imgs/show-page.png)
 
+# ERD
+![erd](./imgs/erd.png)
+
 # Screenshots
 ![homepage](./imgs/main-page.png)
 ![listpage](./imgs/shop-page.png)
